@@ -2,13 +2,16 @@ import "./bookBrowser.scss";
 import { useBooks } from "../../hooks";
 import { Book } from "./Book";
 import AddBook from "./AddBook";
+import { Toaster } from "react-hot-toast";
 
 const BookBrowser = () => {
-  const { data, status, error, isLoading } = useBooks();
+  const { data, status, isError, isLoading } = useBooks();
+
   if (isLoading) {
-    <>Loading...</>;
+    <div className="error-msg">Loading...</div>;
   }
-  if (error) {
+
+  if (isError) {
     <div className="error-msg">Something went wrong...</div>;
   }
 
@@ -18,6 +21,7 @@ const BookBrowser = () => {
 
   return (
     <div className="book-browser">
+      <Toaster />
       {data?.map((book, index) => (
         <Book key={index} book={book} />
       ))}
