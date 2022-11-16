@@ -1,0 +1,15 @@
+{
+  "short_name": "Kirjaselain",
+  "name": "Kirjaselain",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "128x128",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#292929",
+  "background_color": "#292929"
+}

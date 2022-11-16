@@ -1,0 +1,34 @@
+.form-spinner {
+  position: absolute;
+  backdrop-filter: blur(2px);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-container {
+  animation: spinner 800ms infinite;
+  width: 80px;
+  height: 80px;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.required-field {
+  outline: 1px solid rgb(230, 38, 38);
+}
+
+.required-field:focus {
+  outline: 2px solid rgb(230, 38, 38);
+}

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(41, 41, 41);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(41, 41, 41, 1) 0%,
+    rgba(21, 21, 12, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(41, 41, 41, 1) 0%,
+    rgba(21, 21, 12, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(41, 41, 41, 1) 0%,
+    rgba(21, 21, 12, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#292929",endColorstr="#15150c",GradientType=1);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+input,
+textarea {
+  font-size: 15px;
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: rgb(243, 243, 243);
+}
+
+label {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+input {
+  height: 35px;
+  padding-left: 10px;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: 1px solid rgb(35, 204, 20);
+  box-shadow: 0px 0px 3px black;
+  background-color: white;
+}
+
+textarea {
+  max-height: 150px;
+  min-height: 150px;
+  padding: 10px;
+}
+
+button {
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  height: 38px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(74, 214, 69);
+  border-top: 2px solid rgb(119, 236, 115);
+  box-shadow: 0px 1px 3px rgb(46, 46, 46);
+  transition: 80ms;
+}
+
+.button:focus,
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0px 0px 3px rgb(46, 46, 46);
+}
+
+form {
+  background: rgb(161, 161, 161);
+  background: -moz-linear-gradient(
+    312deg,
+    rgba(161, 161, 161, 1) 0%,
+    rgba(191, 191, 191, 1) 48%,
+    rgba(161, 161, 161, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    312deg,
+    rgba(161, 161, 161, 1) 0%,
+    rgba(191, 191, 191, 1) 48%,
+    rgba(161, 161, 161, 1) 100%
+  );
+  background: linear-gradient(
+    312deg,
+    rgba(161, 161, 161, 1) 0%,
+    rgba(191, 191, 191, 1) 48%,
+    rgba(161, 161, 161, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a1a1a1",endColorstr="#a1a1a1",GradientType=1);
+}
