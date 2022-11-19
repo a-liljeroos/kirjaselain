@@ -33,7 +33,7 @@ const Form = ({ book, setOpenForm }: IForm) => {
       className="add-book-form add-book-form-list-position"
     >
       <div className="input-container">
-        <label htmlFor="title">Title</label>
+        <label htmlFor="title">Title *</label>
         <input
           type="text"
           name="title"
@@ -49,7 +49,7 @@ const Form = ({ book, setOpenForm }: IForm) => {
         />
       </div>
       <div className="input-container">
-        <label htmlFor="author">Author</label>
+        <label htmlFor="author">Author *</label>
         <input
           type="text"
           name="author"

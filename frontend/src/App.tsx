@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
+/* import { ReactQueryDevtools } from "react-query/devtools"; */
 import { BookBrowser } from "./components";
 const queryClient = new QueryClient();
 
