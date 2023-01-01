@@ -29,7 +29,7 @@
 ```
 
 <table>
-  <caption>API endpoints</caption>
+  <h3>API endpoints</h3>
   <tr>
     <th>Method</th>
     <th>URL</th>
@@ -40,7 +40,7 @@
     <td>GET</td>
     <td>/books</td>
     <td>-</td>
-    <td>{"[Book]"}</td>
+    <td>[Book]</td>
   </tr>
   <tr>
     <td>POST</td>
