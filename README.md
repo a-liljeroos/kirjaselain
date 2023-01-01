@@ -27,3 +27,37 @@
   "desc": "String"
 }
 ```
+
+      <table>
+        <caption>API endpoints</caption>
+        <tr>
+          <th>Method</th>
+          <th>URL</th>
+          <th>Input params</th>
+          <th>Output params</th>
+        </tr>
+        <tr>
+          <td>GET</td>
+          <td>/books</td>
+          <td>-</td>
+          <td>{"[Book]"}</td>
+        </tr>
+        <tr>
+          <td>POST</td>
+          <td>/books/add</td>
+          <td>title, author</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>DELETE</td>
+          <td>/books/delete</td>
+          <td>id</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>PUT</td>
+          <td>/books/put</td>
+          <td>id, title, author</td>
+          <td>-</td>
+        </tr>
+      </table>
