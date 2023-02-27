@@ -18,30 +18,30 @@
   transform: translateX(15vw);
 }
 
-.add-options {
+.addOptions {
   width: 100%;
   display: flex;
   min-height: 60px;
   align-items: center;
 }
 
-.add-button {
+.addButton {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
 
-.add-button-text {
+.addButtonText {
   color: white;
   margin-left: 20px;
 }
 
-.book-selected {
+.bookSelected {
   outline: 3px solid rgb(241, 241, 241);
   box-shadow: 0px 5px 5px black;
 }
 
-.add-book-form {
+.addBookForm {
   padding: 30px 35px 20px 30px;
   opacity: 1;
   animation: showForm 250ms;
@@ -49,7 +49,7 @@
   z-index: 1;
 }
 
-.add-book-form-list-position {
+.addBookFormListPosition {
   position: absolute;
   left: -410px;
   width: 400px;
@@ -64,22 +64,22 @@
   }
 }
 
-.input-container {
+.inputContainer {
   display: flex;
   flex-direction: column;
   gap: 3px;
   padding-bottom: 8px;
 }
 
-.button-group {
+.buttonGroup {
   margin-top: 10px;
 }
 
-.add-book-form-btn {
+.addBookFormBtn {
   margin-right: 10px;
 }
 
-.book-info {
+.bookInfo {
   width: 500px;
   padding: 25px 35px 20px 30px;
   display: flex;
@@ -107,16 +107,16 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a1a1a1",endColorstr="#a1a1a1",GradientType=1);
 }
 
-.book-title {
+.bookTitle {
   font-size: 25px;
 }
 
-.book-author {
+.bookAuthor {
   font-size: 20px;
   color: rgb(61, 61, 61);
 }
 
-.book-options-button {
+.bookOptionsButton {
   position: absolute;
   left: -50px;
   top: 10px;
@@ -127,41 +127,44 @@
   z-index: 2;
 }
 
-.close-book {
+.closeBook {
   position: absolute;
   top: -50vh;
   height: 200vh;
   width: 600px;
   z-index: 20;
 }
-.z-index5 {
+.zIndex5 {
   z-index: 5;
 }
 
-.add-new-book {
+.addNewBook {
   display: flex;
   flex-direction: column;
   width: 500px;
   padding: 50px;
 }
 
-.add-new-book-button {
+.addNewBookButton {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   padding: 0;
 }
 
-.add-new-book-options {
+.addNewBookOptions {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.add-new-book-options-text {
+.addNewBookOptionsText {
   color: white;
 }
 
-.center-hor {
+.centerHor {
   margin: 0 auto;
+}
+
+.error {
 }

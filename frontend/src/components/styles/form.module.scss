@@ -1,4 +1,4 @@
-.form-spinner {
+.formSpinner {
   position: absolute;
   backdrop-filter: blur(2px);
   height: 100%;
@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.spinner-container {
+.spinnerContainer {
   animation: spinner 800ms infinite;
   width: 80px;
   height: 80px;
@@ -25,10 +25,10 @@
   }
 }
 
-.required-field {
+.requiredField {
   outline: 1px solid rgb(230, 38, 38);
 }
 
-.required-field:focus {
+.requiredField:focus {
   outline: 2px solid rgb(230, 38, 38);
 }

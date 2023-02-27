@@ -1,4 +1,4 @@
-import "./bookBrowser.scss";
+import styles from "../styles/bookBrowser.module.scss";
 import { useBooks } from "../../hooks";
 import { Book } from "./Book";
 import AddBook from "./AddBook";
@@ -8,11 +8,11 @@ const BookBrowser = () => {
   const { data, status, isError, isLoading } = useBooks();
 
   if (isLoading) {
-    <div className="error-msg">Loading...</div>;
+    <div className={styles.error}>Loading...</div>;
   }
 
   if (isError) {
-    <div className="error-msg">Something went wrong...</div>;
+    <div className={styles.error}>Something went wrong...</div>;
   }
 
   if (data?.length === 0) {
@@ -20,7 +20,7 @@ const BookBrowser = () => {
   }
 
   return (
-    <div className="book-browser">
+    <div className={styles.bookBrowser}>
       <Toaster />
       {data?.map((book, index) => (
         <Book key={index} book={book} />

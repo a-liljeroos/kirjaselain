@@ -1,7 +1,8 @@
 import React, { useState, Dispatch, SetStateAction } from "react";
 import { TBook } from "../../Types";
 import { useDeleteBook, useAddBook, usePutBook } from "../../hooks";
-import "./form.scss";
+import formStyles from "../styles/form.module.scss";
+import bookStyles from "../styles/bookBrowser.module.scss";
 import { validateForm } from "../validateForm";
 
 interface IForm {
@@ -30,9 +31,11 @@ const Form = ({ book, setOpenForm }: IForm) => {
       onSubmit={(e: React.SyntheticEvent) => {
         e.preventDefault();
       }}
-      className="add-book-form add-book-form-list-position"
+      className={
+        bookStyles.addBookForm + " " + bookStyles.addBookFormListPosition
+      }
     >
-      <div className="input-container">
+      <div className={formStyles.inputContainer}>
         <label htmlFor="title">Title *</label>
         <input
           type="text"
@@ -44,11 +47,11 @@ const Form = ({ book, setOpenForm }: IForm) => {
             });
           }}
           defaultValue={bookForm.title}
-          className={`${showError ? "required-field" : ""}`}
+          className={`${showError ? formStyles.requiredField : ""}`}
           required
         />
       </div>
-      <div className="input-container">
+      <div className={formStyles.inputContainer}>
         <label htmlFor="author">Author *</label>
         <input
           type="text"
@@ -60,11 +63,11 @@ const Form = ({ book, setOpenForm }: IForm) => {
             });
           }}
           defaultValue={bookForm.author}
-          className={`${showError ? "required-field" : ""}`}
+          className={`${showError ? formStyles.requiredField : ""}`}
           required
         />
       </div>
-      <div className="input-container">
+      <div className={bookStyles.inputContainer}>
         <label htmlFor="description">Description</label>
         <textarea
           name="description"
@@ -78,12 +81,12 @@ const Form = ({ book, setOpenForm }: IForm) => {
         />
       </div>
       {showError && <>* please fill the required fields</>}
-      <div className="button-group">
+      <div className={bookStyles.buttonGroup}>
         <button
           name="save-new"
           id="save-new"
           type="submit"
-          className="add-book-form-btn"
+          className={bookStyles.addBookFormBtn}
           onClick={() => {
             if (validateForm(bookForm)) {
               addBook();
@@ -99,7 +102,7 @@ const Form = ({ book, setOpenForm }: IForm) => {
         <button
           name="save"
           type="submit"
-          className="add-book-form-btn"
+          className={bookStyles.addBookFormBtn}
           onClick={() => {
             if (validateForm(bookForm)) {
               putBook();
@@ -114,7 +117,7 @@ const Form = ({ book, setOpenForm }: IForm) => {
         <button
           name="delete"
           type="submit"
-          className="add-book-form-btn"
+          className={bookStyles.addBookFormBtn}
           onClick={() => {
             deleteBook();
             setOpenForm(false);
@@ -125,7 +128,7 @@ const Form = ({ book, setOpenForm }: IForm) => {
         <button
           name="cancel"
           type="button"
-          className="add-book-form-btn"
+          className={bookStyles.addBookFormBtn}
           onClick={() => {
             setOpenForm(false);
           }}
